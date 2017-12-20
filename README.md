@@ -1,2 +1,3 @@
-# mlnd-boston-housing
-Project for Udacity Machine Learning Nanodegree
+# Boston Housing
+
+Project for Udacity Machine Learning Nanodegree program
