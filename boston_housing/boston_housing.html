@@ -12444,11 +12444,11 @@ Specially in cross validation helps to make the models more robust, able to gene
 <div class="text_cell_render border-box-sizing rendered_html">
 <p><strong>Answer: The k-fold cross validation provides a good way to validate the model before testing data and including a good way for hiperparameters regulations. 
 For example, let's pretend the data available is 100 samples. As usual (normal split), we save 30% for testing and 70% for training.
-The cross validation technique will get the 70 samples reserved of training (70% from total) and separate them in other two groups, one for training and other for testing.
-Using the k-fold cross-validation, we separate the samples in different groups or folds, for example for k=7 indicates 7 folds.
-Each fold, for our example, will have 10 elements (total 70 elements). We can use the same training/testing split of 70/30, then, for each fold will have 7 elements for training and 3 elements for testing.
-This technique, differently from the regular training and testing, will evaluate better our model because, in that example, will be tested and trained 7 rounds, with randomized data and using different hiperparameter regulations, such as of Grid Search.
-At the end, with different regulations approaches, the final model will be generated with average paramaters and more capable to deal with new data, and not depeding of testing data, exclusively, to evaluate the model.</strong></p>
+The k-fold cross-validation technique will get the training set, the 70 samples (70% from total) and separate them in small numbers (<em>k</em>) of groups of data, each one, called a <em>fold</em>, will be divided in training and testing.
+Using a k=7 indicates that the training data will be divided into 7 folds.
+In our example, each fold, will have 10 elements (70/7 = 10). We can use the same training/testing split of 70/30, then, each fold will have 7 elements for training and 3 elements for testing.
+The important thing, differently from regular training, the k-fold cross validation will be trained and tested, for that example, 7 times against 1 time of regular training. In each training/testing round will be used different regulations parameters to maximize the performance of the model.
+With more training and more testing the model will be able to check different hiperparameters regulations, using, for example, the Grid Search. At the end, the average of these hiperparameters is used and the model will be more robust and more capable to deal with new unknown data, and not depends on testing data, exclusively, to evaluate the model.</strong></p>
 
 </div>
 </div>
